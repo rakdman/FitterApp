@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="10dp"
+    >
+
+    <TextView
+        android:id="@+id/basicsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basics"
+        android:textColor="?attr/colorSecondary" />
+
+    <LinearLayout
+        android:id="@+id/lNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/basicsText">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Night Mode"
+            android:paddingLeft="40dp"
+            android:textSize="18dp"
+            android:textColor="?attr/colorPrimary"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/nightVision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:layout_weight="30"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_below="@id/lNight"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/deleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lNight"
+        android:text="Delete Account"
+        android:paddingHorizontal="40dp"
+        android:layout_marginVertical="15dp"
+        android:textSize="18dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/deleteAccount"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_marginVertical="15dp"
+        android:paddingHorizontal="40dp"
+        android:text="Change Password"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/changePassword"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:layout_marginVertical="15dp"
+        android:paddingHorizontal="40dp"
+        android:text="Logout"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/deleteAccount"
+        android:background="@android:color/darker_gray" />
+
+
+
+
+
+
+
+</RelativeLayout>

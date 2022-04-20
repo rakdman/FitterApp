@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentBikeLayout"
+    tools:context=".fragments.BikeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp">
+
+        <LinearLayout
+            android:id="@+id/activityChooseLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/activityWalk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_directions_walk_24"
+                android:background="@drawable/activity_button_not_selected"/>
+
+            <ImageButton
+                android:id="@+id/activityRun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_directions_run_24"
+                android:background="@drawable/activity_button_not_selected"/>
+
+            <ImageButton
+                android:id="@+id/activityCycle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_directions_bike_24"
+                android:background="@drawable/activity_button_not_selected"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/controlButton"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/activityChooseLayout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+
+        <LinearLayout
+            android:id="@+id/activityPaused"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/controlButton"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="100dp"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src = "@drawable/ic_baseline_error_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Activity is Paused"
+                android:textColor="@color/purple_500"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/confidenceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/activityPaused"
+            android:layout_marginTop="60dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/activity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Activity"
+                android:gravity="center"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/transition"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/activity"
+                android:text="Transition"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kmsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/confidenceLayout"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/kmText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="KM"
+                android:gravity="center"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/kmCount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/activity"
+                android:text="0.00"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>
