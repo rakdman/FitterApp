@@ -2,6 +2,8 @@
 
 The Andriod application developed using Kotlin, Java Spring Boot and MYSQL to capture the user activitiy (walking or running or cycling). The app also helps to earn the virtual coins which can be bought through the already uploaded voucher codes.
 
+The project is developed with other team memebers. 
+
 ### My responsibility:
 Developed multiple Spring boot REST APIs.
 
